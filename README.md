@@ -19,21 +19,25 @@ The first route we need to declare is the WSGI application. If we would like to 
 `WSGIScriptAlias / /var/www/surl/surl.wsgi`
 
 Instead, if we would like to make it available at a suburl (eg. http://domain.com/ourapp), we declare as:
+
 `WSGIScriptAlias /ourapp /var/www/surl/surl.wsgi`
 
 We need to declare permissions; under previous line, add:
-`WSGIScriptAlias / /var/www/surl/surl.wsgi`
+```
+WSGIScriptAlias / /var/www/surl/surl.wsgi
 
 <Directory /var/www/surl>
 	Order deny, allow
 	Allow from all
 </Directory>
-
+```
 Add a few more directories:
 
-`WSGIScriptAlias / /var/www/surl/surl.wsgi`
+```
+WSGIScriptAlias / /var/www/surl/surl.wsgi
 
 <Directory /var/www/surl>
 	Order deny, allow
 	Allow from all
-</Directory>`
+</Directory>
+```
