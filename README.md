@@ -5,7 +5,7 @@ This is a simple URL shortener app.
 
 I used python 3.5.1 and Flask.
 
-Implementation under WSGI:
+## Implementation under WSGI:
 WSGI stands for Web Server Gateway Interface. Actually, it's Python Web Server Gateway Interface, because WSGI is a Python standard, born as a PEP (Python Enhancement Proposal) from the need of a simple and universal interface between web servers and web applications or frameworks (Flask, Django, Bottle and so forth).
 
 WSGI has to be implemented on both server and framework sides in order to use its interface so that web server will know how to communicate with web application, and how scripts within the web application can be chained together to process one request.
