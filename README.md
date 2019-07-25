@@ -22,18 +22,18 @@ Instead, if we would like to make it available at a suburl (eg. http://domain.co
 `WSGIScriptAlias /ourapp /var/www/surl/surl.wsgi`
 
 We need to declare permissions; under previous line, add:
-WSGIScriptAlias / /var/www/surl/surl.wsgi
+`WSGIScriptAlias / /var/www/surl/surl.wsgi
 
 <Directory /var/www/surl>
 	Order deny, allow
 	Allow from all
-</Directory>
+</Directory>`
 
 Add a few more directories:
 
-WSGIScriptAlias / /var/www/surl/surl.wsgi
+`WSGIScriptAlias / /var/www/surl/surl.wsgi
 
 <Directory /var/www/surl>
 	Order deny, allow
 	Allow from all
-</Directory>
+</Directory>`
